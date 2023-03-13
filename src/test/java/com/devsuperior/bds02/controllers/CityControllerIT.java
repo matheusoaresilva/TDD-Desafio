@@ -75,7 +75,7 @@ public class CityControllerIT {
 	@Test
 	public void deleteShouldReturnNotFoundWhenNonExistingId() throws Exception {		
 
-		Long nonExistingId = 50L;
+		Long nonExistingId = 1250L;
 		
 		ResultActions result =
 				mockMvc.perform(delete("/cities/{id}", nonExistingId));
